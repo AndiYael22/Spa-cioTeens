@@ -22,13 +22,18 @@
     font-size: 20px;
 }
 .espacio{
-    padding-top: 20px;
+    padding-top: 40px;
+    padding-bottom: 5px;
+    margin: auto;
 }
 #contrasenha:hover{
     color: red;
 } /* Es solo ejemplo por ahora; quiero que salga una ventanita que explique las condiciones para crear la contraseña */
 #subrayado{
     text-decoration: underline;
+}
+#centro{
+    justify-content: center;
 }
 p{
     color: black;
