@@ -1,8 +1,33 @@
 div> h1{
-    color: rgb(216, 101, 145);
-
+    color: rgb(189, 28, 90);
+    font-family: 'Poppins', sans-serif;
+}
+.contenedor{
+  color: pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
 }
+
+.betyyadi{
+  width: 75%;
+}
+div> h2{
+  color: rgb(226, 52, 81);
+}
+col-sm-8{
+  max-width: 20rem;
+  max-height: 20rem;
+}
+
 html, body{
     font-family: 'Poppins', sans-serif;
     font-size: 20px;
@@ -210,9 +235,8 @@ html, body{
   }
   
   .carousel-inner{
+    max-height: 45rem;
     margin: auto;
-   
-
     text-align: center; 
   
   }
@@ -235,15 +259,9 @@ html, body{
   }
   
   
-  .container-fluid-historia{
-    background-color: rgb(255, 175, 220);
-    margin: auto;
-    width: 70%;
-    justify-content: center;
-    text-align: center;
-    border-radius: 10px;
   
-  }
+  
+  
   .container-fluid-mvs {
     background-color: blanchedalmond;
    padding-bottom: 10px;
