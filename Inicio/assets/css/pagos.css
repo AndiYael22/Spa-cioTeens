@@ -1,7 +1,7 @@
 .pago{
     border: 3px red solid;
     width: 600px;
-    height: 800px;
+    height: 400px;
     margin: auto;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -9,5 +9,6 @@
 
 form{
     margin-top: 20px;
+    margin-left: 40px;
     text-align: justify;
 }
