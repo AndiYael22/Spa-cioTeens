@@ -1,4 +1,20 @@
 div> h1{
+    color: rgb(189, 28, 90);
+    font-family: 'Poppins', sans-serif;
+}
+.contenedor{
+  color: pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   color: rgb(189, 28, 90);
   font-family: 'Poppins', sans-serif;
 }
@@ -18,6 +34,16 @@ align-items: center;
 }
 
 .betyyadi{
+  width: 75%;
+}
+div> h2{
+  color: rgb(226, 52, 81);
+}
+col-sm-8{
+  max-width: 20rem;
+  max-height: 20rem;
+}
+
 width: 75%;
 }
 div> h2{
@@ -27,6 +53,7 @@ col-sm-8{
 max-width: 20rem;
 max-height: 20rem;
 }
+
 
 html, body{
   font-family: 'Poppins', sans-serif;
@@ -186,6 +213,12 @@ h3{font-size: 15px;
     width: 400px;
     height: 270px;
   }
+  
+  .carousel-inner{
+    max-height: 45rem;
+    margin: auto;
+    text-align: center; 
+  
 
 }
 #logo{
@@ -256,6 +289,25 @@ width: auto;
   margin:auto;
   margin-bottom: 20px;
   
+  
+  
+  
+  
+  .container-fluid-mvs {
+    background-color: blanchedalmond;
+   padding-bottom: 10px;
+   padding-left: 30px;
+   padding-right: 30px;
+   padding-top: 30px;
+    margin: auto;
+    font-size: 20px;
+    width: 70%;
+    text-align: justify;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  }
+  
+
 }
 
 
@@ -275,3 +327,4 @@ width: auto;
 margin-top: 50px;
 margin-bottom: 50px;
 }
+
