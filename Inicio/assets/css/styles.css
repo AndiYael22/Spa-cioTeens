@@ -102,14 +102,11 @@ nav{ background-color: rgb(255, 227, 193);
 
 }
 .contcontactanos{ 
-height: 400px;
-
- 
-
+height: 300px;
 }
 #mapa{ 
   margin-top: 22px;
-  margin-left: 20px;
+  margin-left: 60px;
   width: auto;
   float: left;
 }
