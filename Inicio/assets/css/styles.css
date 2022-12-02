@@ -18,19 +18,19 @@ left: 0;
 
 #a:hover {color: rgb(235, 75, 101);}
 #home {
-  height: 60px;
+  height: 50px;
 }
 #acceder {
-  height: 30px;
+  height: 20px;
 }
 #registro {
-  height: 30px;
+  height: 20px;
 }
 #home1{
-  height: 40px;
+  height: 30px;
 }
 #home2{
-  height: 35px;
+  height: 25px;
 }
 nav{ background-color: rgb(255, 227, 193);
   
@@ -51,6 +51,8 @@ nav{ background-color: rgb(255, 227, 193);
  
   .navbar{
     position: relative;
+    height: 70px;
+    
     
   }
  
@@ -163,7 +165,16 @@ h3{font-size: 15px;
   text-align: end;
   }
 
-
+  .nav-link{
+    font-size: 18px;
+    margin-right:75px;
+  
+  }
+  .nav-link1{
+   
+    margin-left:5px;
+  
+  }
 
 @media (min-width: 320px) {
 

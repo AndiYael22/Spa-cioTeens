@@ -1,4 +1,5 @@
-customElements.define( 'c-e', class extends HTMLElement {
+
+customElements.define( 'c-e', class extends HTMLElement   {
   constructor() {
       super()
       this.attachShadow( { mode: 'open' } )
@@ -43,13 +44,10 @@ customElements.define( 'c-e', class extends HTMLElement {
               </div>
             </div>
           </nav>
+       
         `
   }
-  connectedCallback() {
-      this.innerHTML = ` 
-              
-    `
-  }
+ 
 } )
 
 
