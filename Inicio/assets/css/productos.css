@@ -9,12 +9,14 @@
     border: solid black;
     background-color: beige;
     display: flex;
+    flex-direction: row;
 }
 .card{
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     text-align: center;
+    display: flex;
 }
 #servicios{
     justify-content: center;
@@ -22,7 +24,7 @@
     text-align: center;
 }
 /* HEADER COMUNAL */
-#a{text-decoration: none;
+/* #a{text-decoration: none;
     color: black;
     font-weight: 500;
   
@@ -94,3 +96,4 @@
     margin-left: 50px;
   
   }
+ */
