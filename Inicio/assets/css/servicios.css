@@ -1,167 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Lato&family=Roboto+Mono:ital,wght@1,200&family=Shalimar&family=Source+Sans+Pro:wght@200&display=swap');
+
+html, body{
+    
+    font-size: 20px;
+    line-height: 1.5;
+  box-sizing: border-box;
+  margin: 0;
+  
+  top: 0;
+  left: 0;
+  }
+
 .Rosa{
-    font-family: Helvetica;
-    color: #F72E6C;
-    position: absolute;
-    width: 464px;
-    height: 94px;
-    left: 497px;
-    top: 100px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 69px;
+   text-align: center;
+   color: #F72E6C;
+  
+}
+
+.card-title1{
+  color: rgba(244, 63, 119, 0.76);
+}
+.card-title2{
+  color: #AF2A45;
+}
+.card-title3{
+  color: #AF2A45;
+}
+.card-title4{
+  color: rgba(244, 63, 119, 0.76);
+}
+.comentarios{
+  background:#F43F77
+}
+.blanco{
+  color: white;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+    /* footer de arriba */
+#a{text-decoration: none;
+    color: black;
+    font-weight: 500;
+  
+  
+  }
+  
+  #a:hover {color: rgb(235, 75, 101);}
+  #home {
+    height: 60px;
+  }
+  #acceder {
+    height: 30px;
+  }
+  #registro {
+    height: 30px;
+  }
+  #home1{
+    height: 40px;
+  }
+  #home2{
+    height: 35px;
+  }
+  nav{ background-color: rgb(255, 227, 193);
+    
+  
+    
+    }
+    .list-group ul{
+      list-style-type: none;
+      text-align: center;
+    }
+    .list-group li{display: inline;
+      text-align: center;
+      margin: 0 0 0 10px;
+      
+  
+    }
+  
+   
+    .navbar{
+      position: relative;
+      
+    }
+   
+    .navbar-toggler{background-color: rgb(255, 255, 255) ;
+      border: none;
+      padding: 10px 6px;
+      outline: 0;
+  
+    }
+    .navbar-toggler span{
+        display: block;
+        width: 22px;
+        height: 2px;
+        border: 1px;
+        background: rgb(242,43,178) ;
+     }
+     .navbar-toggler span + span{
+       margin-top: 4px;
+       width: 18px;
+       margin-left: 4px;
+     }
+     .navbar-toggler span + span + span{
+      width: 10px;
+        margin-left: 10px;
+      }
+  
+  #home{
+    margin-left: 50px;
+  
+  }
+  /* fin de footer de arriba*/
+
+  .container{
+    width: 100%;
+    height: 460px;
+    margin-left: -250;
+    padding-left: -204px;
+  }
+  .container-fluid-abajo{
+    background-color: rgb(255, 227, 193);
+    bottom: 0;
+   width: 100%;
+   height: 400px;
+  }
+  .contmapa{ 
+    height: 400px;
+  
+  }
+  .contcontactanos{ 
+  height: 400px;
+  
+   
+  
+  }
+  #mapa{ 
+    margin-top: 22px;
+    margin-left: 20px;
+    width: auto;
+    float: left;
+  }
+  #sede{
+  text-align: center;
+  color: rgb(242,43,178) ;
+  padding: 0;
+  margin-left: 20px;
+  margin-bottom: 0;
+  margin-top: 0;
+  }
+  #direccion{
+  text-align: center;
+  margin-left: 20px;
+  
+    color: rgb(242,43,178) ;
+    
+    }
+    #ac{
+    width: 500px;
+     height: 70px;
+     margin: left;
+      }
+       h1{font-size: 40px;
+        font-style: bold;
+       }
+  h3{font-size: 15px;
+  }
+  
+  @media (min-width: 320px) {
+  
+    iframe {
+  
+      width: 0px;
+  
+      height: 0px;
+  
+    }
+  
+  }
+  /* Pantalla 768px o superior */
+  
+  @media (min-width: 768px) {
+  
+    iframe {
+      width: 400px;
+      height: 270px;
+    }
+  
+  }
+  #logo{
+  
+    text-align: end;
+    }
+  
+  
+  
+  @media (min-width: 320px) {
+  
+   table{
+    margin-top: 40px;
     text-align: center;
-    
+    width: 350px;
+    height: 150px;
+    margin-left: 70px;
+  
     }
-    
-    
-    .Peinado{
-        position: absolute;
-    width: 516px;
-    height: 462px;
-    left: 186px;
-    top: 215px;
-    }
-    
-    .container1{
-        position: absolute;
-    width: 582px;
-    height: 330px;
-    left: 720px;
-    top: 224px;
-    
-    font-family: Helvetica;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 35px;
-    
-    color: #000000;
-    
-    
-    }
-    .container2{
-        position: absolute;
-    width: 536px;
-    height: 286px;
-    left: 199px;
-    top: 718px;
-    
-    font-family: Helvetica;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 35px;
-    
-    color: #000000;
-    }
-    
-    .familia{
-        position: absolute;
-    width: 516px;
-    height: 462px;
-    left: 774px;
-    top: 700px; 
-    }
-    
-    .Palo{
-        font-family: Helvetica;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 58px;
-    
-    color: #AF2A45;
-    }
-    .container3{
-        position: absolute;
-    width: 630px;
-    height: 376px;
-    left: 692px;
-    top: 1176px;
-    
-    font-family: Helvetica;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 35px;
-    
-    color: #000000;
-    }
-    
-    .fiesta{
-        position: absolute;
-    width: 516px;
-    height: 462px;
-    left: 142px;
-    top: 1110px;
-    }
-    
-    .Obscuro{
-        font-family: Helvetica;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 58px;
-    
-    color: rgba(244, 63, 119, 0.76);
-    }
-    
-    .container4{
-        position: absolute;
-    width: 626px;
-    height: 366px;
-    left: 120px;
-    top: 1738px;
-    
-    font-family: Helvetica;
-    font-style: italic;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 35px;
-    
-    color: #000000;
-    
-    }
-    
-    .clinica{
-        position: absolute;
-    width: 516px;
-    height: 462px;
-    left: 822.55px;
-    top: 1770.54px;
-    }
-    
-    .galeria{
-        position: absolute;
-    width: 1440px;
-    height: 488px;
-    left: 0px;
-    top: 2275px;
-    
-    background: #AF2A45;
-    }
-    
-    
-    .blanco{
-    
-    font-family: Helvetica;
-    font-style: normal;
-    font-weight: 800;
-    font-size: 48px;
-    line-height: 69px;
+  
+  }
+  /* Pantalla 768px o superior */
+  
+  @media (min-width: 768px) {
+  
+   table {
+    margin-top: 30px;
     text-align: center;
-    
-    color: #FFFFFF;
+    width: 600px;
+    height: 300px;
+  
+  
+    } }
+    h2{font-size: 30px;
     }
-    
-    
-    .clientes{
-        position: absolute;
-    width: 1440px;
-    height: 488px;
-    left: 0px;
-    top: 2826px;
-    
-    background: rgba(244, 63, 119, 0.76);
-    }
+  
