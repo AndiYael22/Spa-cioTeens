@@ -1,5 +1,6 @@
 .pago{
-    border: 3px red solid;
+  background: linear-gradient(180deg, #ffbacb 0, #feacc3 25%, #f29db9 50%, #e68eb0 75%, #da81a9 100%);
+  
     width: 600px;
     height: 400px;
     margin: auto;
@@ -11,4 +12,6 @@ form{
     margin-top: 20px;
     margin-left: 40px;
     text-align: justify;
-}
+  }
+
+
