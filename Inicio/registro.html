@@ -18,58 +18,56 @@
 </head>
 <body>
     <!-- inicio del footer de arriba-->
-    <header >
-        <nav class="navbar navbar-expand-lg header-nav fixed-top">
-          <div class="d-none d-lg-block">
-            <ul class="list-group list-group-horizontal ">
-              <a href=""><img id="home2" src="/assets/img/home.png" alt=""></a>
-                <li class="list-group-item-none"> <a class="nav-link"  href="#"><img id="acceder" src="/assets/img/acceer.png" alt=""></a></li>
-                <li class="list-group-item-none">  <a class="nav-link"  href="#"><img id="registro" src="/assets/img/registro.png" alt=""></a></li>
-              </ul>
-        </div>
-        </ul>
-          <div class="container-fluid flex-row-reverse">
-            <a class="navbar-brand" href="#"> <img id="home" src="/assets/img/nofondo 2.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span></span>
-              <span></span>
-              <span></span>
-            </button>
-            
-            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-              <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                  <a class="nav-link d-block d-sm-block d-md-none"  href="#"><img id="acceder" src="/assets/img/acceer.png" alt=""></a>
-                </li>
-                
-                  <a class="nav-link d-block d-sm-block d-md-none"  href="#"><img id="registro" src="/assets/img/registro.png" alt=""></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#" id="a">Acerca de nosotros</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#" id="a">Contactos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#" id="a">Productos</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#" id="a">Servicios</a>
-                </li>
-              </ul>
-            
+    <nav class="navbar navbar-expand-lg header-nav fixed-top">
+      <div class="d-none d-lg-block">
+        <ul class="list-group list-group-horizontal " id="si">
+          <a href="/inicio.html" class="nav-link1"><img id="home2" src="/assets/img/home.png" alt=""></a>
+            <li class="list-group-item-none"> <a class="nav-link1"  href="/iniciarSes.html"><img id="acceder" src="/assets/img/acceer.png" alt=""></a></li>
+            <li class="list-group-item-none">  <a class="nav-link1"  href="/registro.html"><img id="registro" src="/assets/img/registro.png" alt=""></a></li>
+          </ul>
+    </div>
+    </ul>
+      <div class="container-fluid flex-row-reverse  " >
+        <a class="navbar-brand " href="/inicio.html"> <img id="home" src="/assets/img/nofondo 2.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+       
+        <div class="collapse navbar-collapse " id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0   flex-fill justify-content-between"  >
+            <li class="nav-item" >
+              <a class="nav-link d-block d-sm-block d-md-none"  href="/iniciarSes.html"><img id="acceder" src="/assets/img/acceer.png" alt=""></a>
+            </li>
            
-            </div>
-          </div>
-        </nav>
-      </header>
+              <a class="nav-link d-block d-sm-block d-md-none"  href="/registro.html"><img id="registro" src="/assets/img/registro.png" alt=""></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/sobrenosotros.html" id="a">Acerca de nosotros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html" id="a">Contáctanos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/productos.html" id="a">Productos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/servicios.html" id="a">Servicios</a>
+            </li>
+          </ul>
+       
+      
+        </div>
+      </div>
+    </nav>
 
 <!-- fin del footer arriba -->
 
 <!-- CUADRO DE REGISTRO  -->
  
-<div class="container py-5">
-  <div class="row justify-content-center ">
+
+  <div class="row justify-content-center m-lg-5">
     
       <div class="col-lg-9 ">
           <div class="contacto-formulario p-5">
@@ -82,38 +80,47 @@
           </div>
         <div class="col-md-12">
           <label class="form-label"></label>
-          <input type="text" class="form-control" placeholder="Nombre(s)" required>
+          <input type="text" class="form-control" placeholder="Nombre(s)" 
+          pattern='^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$' title="El nombre solo debe de contener letras A-Z" required>
+          <div id="liveAlert5"></div>
         </div>
       
         <div class="col-md-12">
           <label class="form-label"></label>
-          <input type="text" class="form-control" placeholder="Apellido(s)" required>
+          <input type="text" class="form-control" placeholder="Apellido(s)" 
+          pattern='^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$' title="El apellido solo debe de contener letras A-Z" required>
+          <div id="liveAlert6"></div>
         </div>
 
         <div class="col-md-12">
           <label class="form-label"></label>
           <div class="input-group has-validation">
-            <input type="text" class="form-control" placeholder="Nombre de usuario" required>
+            <input type="text" class="form-control" placeholder="Nombre de usuario"  required>
           </div>
         </div>
 
         <div class="col-md-12">
             <label for="email" class="form-label"></label>
-            <input type="email" name="email" id="email" class="form-control" placeholder="Correo electrónico" required>
-        </div>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Correo electrónico" title="El correo electrónico debe de contener @" data-pattern="" required>
+            <div id="liveAlert3"></div>
+          </div>
 
         <div class="col-md-12">
             <label class="form-label" id="contrasenha" for="psw"></label>
-            <input type="password" name="psw" id="password" class="form-control" placeholder="Contraseña" autocomplete="off" data-pattern="^(?=.[a-z])(?=.[A-Z])(?=.\d)(?=.[$@$!%?&])([A-Za-z\d$@$!%?&]|[^ ]){8,12}$" title="*Debe contener entre 8 y 12 caracteres. 
+            
+            <input type="password" name="psw" id="password" class="form-control" placeholder="Contraseña" autocomplete="off" 
+            pattern="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" title="*Debe contener entre 8 y 16 caracteres. 
             Al menos una mayúscula y un caracter especial, como . * - + / $ @ " required>
-        </div>
+            
+          </div>
         
         <div id="liveAlert"></div>
         <div class="col-md-12">
           <label class="form-label" for="psw-repeat"></label>
-          <input type="password" name="psw-repeat" id="password_repeat" class="form-control" placeholder="Repetir contraseña" autocomplete="off" data-pattern="^(?=.[a-z])(?=.[A-Z])(?=.\d)(?=.[$@$!%?&])([A-Za-z\d$@$!%?&]|[^ ]){8,12}$" required>
+          <input type="password" name="psw-repeat" id="password_repeat" class="form-control" placeholder="Repetir contraseña" autocomplete="off" data-pattern="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" required>
         </div>
         <div id="liveAlert2"></div>
+        <div id="liveAlert4"></div>
         <br>
         <div class="container-fluid">
           <div class=" espacio">
@@ -143,7 +150,8 @@
         </div>
       </div>
     </div>
-  </div>
+    <div class="my-5"></div>
+
 <!-- Falta hacer un hover que muestre una ventana emergente sobre las condiciones para llenar...
   e.g. Facebook: <div class="mtm mbs _2_68">Birthday<a class="_58ms mlm" id="birthday-help" href="#" title="Click for more information" role="button" aria-describedby="u_1_3_Yv"><i class="img sp_98fCI7IVTTz sx_c4643a"></i></a></div>
   
@@ -169,54 +177,56 @@
         
 <!-- contenedor o footer de abajo -->
 
-    <div class="container-fluid container-fluid-abajo p-5" style="margin-top:50em;" >
-  
-        <div class="row ">
-        <div class="col contmapa col-6  d-none d-lg-block ">
     
-        <div id="ac" >
-            <h1 id="sede" >Nuestra Sede</h1>
-            <h3 id="direccion" >Mar Mediterráneo 2161, Country <br> Club, Guadalajara, Jal.</h3>
-        </div>
+<div class="container-fluid-abajo" >
+ 
+  <div class="row ">
+  <div class="col contmapa col-6  d-none d-lg-block ">
+
+  <div id="ac" >
+      <h1 id="sede" >Nuestra Sede</h1>
+      <h3 id="direccion" >Mar Mediterráneo 2161, Country <br> Club, Guadalajara, Jal.</h3>
+  </div>
+
+  <div id="mapa" >
+      <iframe class="res"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1866.1562702937742!2d-103.37232947953386!3d20.697529404236096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae3a95175653%3A0x316500234d392c!2sMar%20Mediterr%C3%A1neo%202171%2C%20Country%20Club%2C%2044610%20Guadalajara%2C%20Jal.!5e0!3m2!1ses-419!2smx!4v1668366350780!5m2!1ses-419!2smx"     style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  </div>
+</div>    
+  <div class="col contcontactanos col-6">
     
-        <div id="mapa" >
-            <iframe class="res"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1866.1562702937742!2d-103.37232947953386!3d20.697529404236096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae3a95175653%3A0x316500234d392c!2sMar%20Mediterr%C3%A1neo%202171%2C%20Country%20Club%2C%2044610%20Guadalajara%2C%20Jal.!5e0!3m2!1ses-419!2smx!4v1668366350780!5m2!1ses-419!2smx"     style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      
-        </div>
-    </div>     
-        <div class="col contcontactanos col-6">
-           
-           <div id="logo" >
-            <a class="navbar-brand "  href="#"> <img id="home" src="/assets/img/nofondo 2.png" alt=""></a>
-        </div>
-        <table>
-          <tr >
-              <td><h2>Contacto </h2></td>
-              <td ><h2> Cónocenos</h2></td>
-          </tr>
-          <tr>
-              <td><a href="">Instragram</a></td>
-              <td >Sobre nosotros</td>
-          </tr>
-          <tr>
-            <td><a href="">WhatsApp</a></td>
-              <td>Servicios</td>
-          </tr>
-          <tr>
-            <td><a href="">Facebook</a></td>
-              <td >Productos</td>
-          </tr>
-          <tr>
-            <td><a href="">Teléfono</a></td>
-              <td >Registro</td>
-          </tr>
-          </table>
-        </div>
+     <div id="logo" >
+      <a class="navbar-brand "  href="#"> <img id="home" src="/assets/img/nofondo 2.png" alt=""></a>
+  </div>
+  <table>
+    <tr >
+        <td><h2>Contacto </h2></td>
+        <td ><h2> Cónocenos</h2></td>
+    </tr>
+    <tr>
+        <td><a href="https://instagram.com/spa_cioteens?igshid=YmMyMTA2M2Y=">Instragram</a></td>
+        <td >Sobre nosotros</td>
+    </tr>
+    <tr>
+      <td><a href="https://wa.me/3314654168">Whatsapp</a></td>
+        <td>Servicios</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.facebook.com/profile.php?id=100063723231847">Facebook</a></td>
+        <td >Productos</td>
+    </tr>
+    <tr>
+      <td><a href="tel:3312024408">Telefono</a></td>
+        <td >Registro</td>
+    </tr>
+    </table>
+  </div>
 
 
-        </div>
-   
-  </div> 
+  </div>
+
+</div>
+
   
 <!-- termina contenedor footer de abajo -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
