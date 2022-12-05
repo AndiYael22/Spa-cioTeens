@@ -119,7 +119,19 @@ body {
     border-radius: 50%;
     cursor: pointer;
 }
+/*Inicio cambiar foto
+.perfil-usuario .cambiar-foto{
+    margin-bottom: .5rem;
+    font-size: 2rem;
 
+}
+
+.perfil-usuario .perfil-usuario-imagen:hover .cambiar-foto{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+fin cambiar foto */
 .seccion-perfil-usuario .perfil-usuario-body {
     width: 70%;
     position: relative;

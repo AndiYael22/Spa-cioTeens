@@ -1,6 +1,10 @@
 .blanco{
   color: white;
 }
+input(type='checkbox')::before{
+  height:20px;
+}
+checkbox
 .cuadro{
   width:50%;
   height:40%;
