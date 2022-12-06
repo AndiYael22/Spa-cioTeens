@@ -1,4 +1,44 @@
+.container-fluid-mvs {
+  background-color: blanchedalmond;
+ padding-bottom: 10px;
+ padding-left: 30px;
+ padding-right: 30px;
+ padding-top: 30px;
+  margin: auto;
+  font-size: 20px;
+  width: 70%;
+  text-align: justify;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+.carousel-inner{
+  max-height: 45rem;
+  margin: auto;
+  text-align: center; 
+}
+td>h2{
+  color: rgb(189, 28, 90);
+    font-family: 'Poppins', sans-serif;
+
+}
 div> h1{
+    color: rgb(189, 28, 90);
+    font-family: 'Poppins', sans-serif;
+}
+
+.contenedor{
+  color: pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor2{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   color: rgb(189, 28, 90);
   font-family: 'Poppins', sans-serif;
 }
@@ -9,17 +49,21 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 }
-.contenedor2{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-
+.vidio{
+  width: 75%;
 }
-
 .betyyadi{
-width: 75%;
+  width: 75%;
 }
+div> h2{
+  color: rgb(226, 52, 81);
+}
+col-sm-8{
+  max-width: 20rem;
+  max-height: 20rem;
+}
+
+
 div> h2{
 color: rgb(226, 52, 81);
 }
@@ -27,6 +71,7 @@ col-sm-8{
 max-width: 20rem;
 max-height: 20rem;
 }
+
 
 html, body{
   font-family: 'Poppins', sans-serif;
@@ -45,23 +90,25 @@ left: 0;
 
 
 }
+
 #a:hover {color: rgb(235, 75, 101);}
 #home {
-  height: 60px;
+  height: 50px;
 }
 #acceder {
-  height: 30px;
+  height: 20px;
 }
 #registro {
-  height: 30px;
+  height: 20px;
 }
 #home1{
-  height: 40px;
+  height: 30px;
 }
 #home2{
-  height: 35px;
+  height: 25px;
 }
 nav{ background-color: rgb(255, 227, 193);
+  
 
   
   }
@@ -72,11 +119,18 @@ nav{ background-color: rgb(255, 227, 193);
   .list-group li{display: inline;
     text-align: center;
     margin: 0 0 0 10px;
+    
 
   }
+
+ 
   .navbar{
     position: relative;
+    height: 70px;
+    
+    
   }
+ 
   .navbar-toggler{background-color: rgb(255, 255, 255) ;
     border: none;
     padding: 10px 6px;
@@ -100,17 +154,10 @@ nav{ background-color: rgb(255, 227, 193);
       margin-left: 10px;
     }
 
-    .navbar-expand-lg .navbar-nav .nav-link{
-/*       padding:auto; */
-      /*justify-content: space-around;*/
-       padding: 0rem 0.2rem 0rem 6rem;
-      position: relative;
-    }
-    .navbar-expand-lg .navbar-nav .nav-link1{
-      padding: 0rem 0.2rem 0rem 0.5rem;
-       /*justify-content: space-around;*/
-      position: relative;
-    }
+#home{
+  margin-left: 50px;
+
+}
 /* fin de footer de arriba*/
 
 .container{
@@ -130,14 +177,11 @@ nav{ background-color: rgb(255, 227, 193);
 
 }
 .contcontactanos{ 
-height: 400px;
-
- 
-
+height: 300px;
 }
 #mapa{ 
   margin-top: 22px;
-  margin-left: 20px;
+  margin-left: 60px;
   width: auto;
   float: left;
 }
@@ -193,7 +237,16 @@ h3{font-size: 15px;
   text-align: end;
   }
 
-
+  .nav-link{
+    font-size: 18px;
+    margin-right:75px;
+  
+  }
+  .nav-link1{
+   
+    margin-left:5px;
+  
+  }
 
 @media (min-width: 320px) {
 
@@ -222,56 +275,3 @@ h3{font-size: 15px;
   h2{font-size: 30px;
   }
 
-#equipo{
-
-  position: relative;
-  top:0;
-  bottom: 0;
-  border: 3px red solid;
-}
-#equipo1{
-
-  text-align: center; 
-}
-
-.carousel-inner{
-  max-height: 45rem;
-  margin: auto;
-  text-align: center; 
-
-}
-.contcarr{
-
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin: auto;
-  justify-content: center;
-  text-align: center;
-width: auto;
-}
-
-.mv{
-  width:auto;
-  height: 657px;
-  margin:auto;
-  margin-bottom: 20px;
-  
-}
-
-
-
-
-
-.container-fluid-mvs {
-  background-color: blanchedalmond;
- padding-bottom: 10px;
- padding-left: 30px;
- padding-right: 30px;
- padding-top: 30px;
-  margin: auto;
-  font-size: 20px;
-  width: 70%;
-  text-align: justify;
-margin-top: 50px;
-margin-bottom: 50px;
-}
