@@ -39,6 +39,7 @@ nav{ background-color: rgb(255, 227, 193);
 
   
   }
+
   .list-group ul{
     list-style-type: none;
     text-align: center;
@@ -57,7 +58,9 @@ nav{ background-color: rgb(255, 227, 193);
     
     
   }
- 
+ .navbar-collapse{
+  background-color: rgb(255, 227, 193);
+ }
   .navbar-toggler{background-color: rgb(255, 255, 255) ;
     border: none;
     padding: 10px 6px;
