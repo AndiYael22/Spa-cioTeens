@@ -47,7 +47,9 @@
     border-radius: 10px;
   
   }
+
   .container-fluid-mvs {
+
     background-color: blanchedalmond;
    padding-bottom: 10px;
    padding-left: 30px;
@@ -56,8 +58,52 @@
     margin: auto;
     font-size: 20px;
     width: 70%;
-    text-align: justify;
-  margin-top: 50px;
+    text-align: justify center;
+  margin-top: 20px;
   margin-bottom: 50px;
   }
+
+  .m2{
+    height: 200px;
+    width: 300px;
+  }
+
+  @media (min-width: 320px) {
+
+    .m1{
+      height: auto;
+      width: 100%;
+    }
+  
+  }
+  /* Pantalla 768px o superior */
+  
+  @media (min-width: 768px) {
+  
+    .m1{
+      height: 500px;
+      width: 100%;
+    }
+  
+  }
+
+  @media (min-width: 320px) {
+
+    .m2{
+      height: auto;
+      width: 300px;
+    }
+  
+  }
+  /* Pantalla 768px o superior */
+  
+  @media (min-width: 768px) {
+  
+    .m2{
+      height: 200px;
+      width: 300px;
+    }
+  
+  }
+  
   

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="./assets/css/style_contact.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles_perfil.css">
+    </head>
+ <!-- inicio del footer de arriba-->
+ <nav class="navbar navbar-expand-lg header-nav fixed-top">
+  <div class="d-none d-lg-block">
+    <ul class="list-group list-group-horizontal " id="si">
+      <a href="/inicio.html" class="nav-link1"><img id="home2" src="/assets/img/home.png" alt=""></a>
+        <li class="list-group-item-none"> <a class="nav-link1"  href="/iniciarSes.html"><img id="acceder" src="/assets/img/acceer.png" alt=""></a></li>
+        <li class="list-group-item-none">  <a class="nav-link1"  href="/registro.html"><img id="registro" src="/assets/img/registro.png" alt=""></a></li>
+      </ul>
+</div>
+</ul>
+  <div class="container-fluid flex-row-reverse  " >
+    <a class="navbar-brand " href="/inicio.html"> <img id="home" src="/assets/img/nofondo 2.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+   
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">
+      <ul class="navbar-nav m-auto mb-2 mb-lg-0   flex-fill justify-content-between"  >
+        <li class="nav-item" >
+          <a class="nav-link d-block d-sm-block d-md-none"  href="/iniciarSes.html"><img id="acceder" src="/assets/img/acceer.png" alt=""></a>
+        </li>
+       
+          <a class="nav-link d-block d-sm-block d-md-none"  href="/registro.html"><img id="registro" src="/assets/img/registro.png" alt=""></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/sobrenosotros.html" id="a">Acerca de nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact.html" id="a">Contáctanos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/productos.html" id="a">Productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/servicios.html" id="a">Servicios</a>
+        </li>
+      </ul>
+   
+  
+    </div>
+  </div>
+</nav>
+<!-- fin del footer arriba -->
+<body>
+
+    <div class="container-fluid-xxl d-flex w-100 seccion-perfil-usuario">
+        <div class="row perfil-usuario-header text-center">
+            <div class="col-10 perfil-usuario-portada ">
+               
+                <div class="col-6 perfil-usuario-imagen">
+                  <div class="sombra">
+                    <img src="assets/img/profil.webp" alt="imagen-usuario">
+                    <!--<a href="#" class="cambiar-foto">
+                      Cambiar foto
+                    </a>--> </div>
+                </div>
+                <button type="button" class="boton-portada">
+                  <a class="regresar" href="/seccion-perfil-usuario.html">Regresar</a>
+                </button>
+            </div>
+        </div>
+        <div class="row perfil-usuario-body">
+            <div class="col-10 perfil-usuario-bio">
+              <div class="col">
+                <form action="#">
+                  <br>
+                  <h3 style="font-weight: 600;color: black;">Nombre de usuario:</h3>
+                   <input type="text" class="col form-control" name="name" value="">
+                  <label for="photo">Cambiar foto</label>
+                  <input type="file" name="photo" id="photo">
+                  </form>
+              </div>
+            </div>
+            <div class="row contacto-formulario perfil-usuario-datos">
+                <form action="#">
+                        <div class="row">
+
+                            <label for="email" class="col-md-4 form_label">Correo electrónico:</label>
+                            <input type="email" class="col form-control" name="email" value="usuario@gmail.com">
+                        </div>
+                        <br>
+                        <div class="row">
+                            <label for="adress" class="col-md-4 form_label">Dirección:</label>
+                            <input type="adress" class="col form-control" name="adress" value="NY. 5 24270">
+                        </div><br>
+                        <div class="row">
+                            <label for="tel" class="col-md-4 form_label">Teléfono:</label>
+                            <input type="tel" class="col form-control" name="tel" value="5555555555">
+                        </div><br>
+                      
+                          <div class="row">
+                            <label for="password" class="col-md-4 form_label">Contraseña:</label>
+                            <input type="password" class="col form-control" name="password" value="">
+                          </div>
+                          <br>
+                          <div class="row">
+                            <label for="password_repeat" class="col-md-4 form_label">Repite tu contraseña:</label>
+                            <input type="password_repeat" class="col form-control" name="password" value="">
+                            <div class="text-center py-5">
+                              <button class="btn btn-primary py-3 px-3" type="submit" id="sendMessageButton">Guardar</button>
+                          </div>
+                          </div>
+                         </div>
+                       
+                </form> 
+            </div>
+
+    </div>
+
+    <!-- conttenedor o footer de abajo -->
+
+    <div class="container-fluid-abajo" >
+ 
+      <div class="row ">
+      <div class="col contmapa col-6  d-none d-lg-block ">
+    
+      <div id="ac" >
+          <h1 id="sede" >Nuestra Sede</h1>
+          <h5 id="direccion" >Mar Mediterráneo 2161, Country <br> Club, Guadalajara, Jal.</h5>
+      </div>
+      <br>
+      <div id="mapa" >
+          <iframe class="res"  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1866.1562702937742!2d-103.37232947953386!3d20.697529404236096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae3a95175653%3A0x316500234d392c!2sMar%20Mediterr%C3%A1neo%202171%2C%20Country%20Club%2C%2044610%20Guadalajara%2C%20Jal.!5e0!3m2!1ses-419!2smx!4v1668366350780!5m2!1ses-419!2smx"     style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    
+      </div>
+    </div>    
+      <div class="col contcontactanos col-6">
+        
+         <div id="logo" >
+          <a class="navbar-brand "  href="#"> <img id="home" src="/assets/img/nofondo 2.png" alt=""></a>
+      </div>
+      <table>
+        <tr >
+            <td><h2>Contacto </h2></td>
+            <td ><h2> Cónocenos</h2></td>
+        </tr>
+        <tr>
+            <td><a href="https://instagram.com/spa_cioteens?igshid=YmMyMTA2M2Y=">Instragram</a></td>
+            <td >Sobre nosotros</td>
+        </tr>
+        <tr>
+          <td><a href="https://wa.me/3314654168">Whatsapp</a></td>
+            <td>Servicios</td>
+        </tr>
+        <tr>
+          <td><a href="https://www.facebook.com/profile.php?id=100063723231847">Facebook</a></td>
+            <td >Productos</td>
+        </tr>
+        <tr>
+          <td><a href="tel:3312024408">Telefono</a></td>
+            <td >Registro</td>
+        </tr>
+        </table>
+      </div>
+    
+    
+      </div>
+    
+    </div>
+  
+<!-- termina contenedor footer de abajo -->
+
+</body>
+
+</html>
