@@ -18,7 +18,7 @@ left: 0;
 
 }
 
-#a:hover {color: rgb(235, 75, 101);}
+#a:hover {color:rgb(242,43,178) ;}
 #home {
   height: 50px;
 }
@@ -210,6 +210,17 @@ h3{font-size: 15px;
 
 
   } }
-  h2{font-size: 30px;
+  .h22{font-size: 30px;
+    color: rgb(242,43,178) ;
   }
+
+a{
+  outline: none;
+  text-decoration: none;
+  color: rgb(242,43,178) ;
+}
+
+a:hover{color: rgb(19, 160, 255) ;
+
+}
 
