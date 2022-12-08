@@ -72,12 +72,21 @@
     }
   
   }
+
+  @media (min-width:481px) {
+
+    .m1{
+      height: 300px;
+      width: 100%;
+    }
+  
+  }
   /* Pantalla 768px o superior */
   
   @media (min-width: 768px) {
   
     .m1{
-      height: 500px;
+      height: 590px;
       width: 100%;
     }
   
@@ -92,7 +101,12 @@
   
   }
   /* Pantalla 768px o superior */
-  
+  @media (min-width:481px) {
+    .m2{
+      height: auto;
+      width: auto;
+    }
+  }
   @media (min-width: 768px) {
   
     .m2{
