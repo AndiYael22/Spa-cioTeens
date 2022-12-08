@@ -8,6 +8,7 @@ const alertPlaceholder5= d.getElementById('liveAlert5')
 const alertPlaceholder6= d.getElementById('liveAlert6')
 const $form = d.querySelector(".form-control"),
     $inputs=d.querySelectorAll(".form-control[required]");
+  
 var message;
 let alerta;
 let contador=0,contador2=0, contador3=0, contador4=0, contador5=0;
