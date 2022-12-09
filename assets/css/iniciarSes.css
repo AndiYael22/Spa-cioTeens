@@ -10,9 +10,7 @@ checkbox
   height:40%;
   border-radius: 8px;
   padding:2%;
-  margin-top: 55px;
-  margin-bottom: 15px;
-  margin-left: 55px;
+  margin: 55px auto;
   position: relative;
   background:rgb(227, 74, 120);
 }
@@ -31,7 +29,7 @@ button{
   font-size: 20px;
 }
 #boton{
-  margin-top: 25px;
+  margin-top: 55px;
 }
 h2{
   text-align: center;

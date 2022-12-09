@@ -50,9 +50,9 @@
 body{
    background-color: var(--light);
   }
-h1{
+/* h1{
  
-}
+} */
 input{
   font-size: 1.2em;
   color: var(--dark);
