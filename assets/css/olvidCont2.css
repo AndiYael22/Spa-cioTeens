@@ -1,17 +1,6 @@
 .blanco{
     color: white;
   }
-.cuadro{
-    width:50%;
-    height:40%;
-    border-radius: 8px;
-    padding:2%;
-    margin: auto;
-    margin-top: 55px;
-    margin-bottom: 55px;
-    position: relative;
-    background:rgb(227, 74, 120);
-}
 .boton{
     color: rgb(227, 74, 120);
     background-color: white;
@@ -20,7 +9,6 @@
     padding: 15px;
     margin-bottom: 12px;
     margin-top: 12px;
-    margin: auto;
     position: relative;
     text-align: center;
     display: inline-block;
@@ -33,4 +21,3 @@ h2{
     justify-content: baseline;
     font-size: medium;
 }
-  
