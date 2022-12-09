@@ -54,7 +54,7 @@ nav{ background-color: rgb(255, 227, 193);
  
   .navbar{
     position: relative;
-    height: 70px;
+    height: 102px;
     
     
   }
@@ -188,24 +188,34 @@ h3{font-size: 15px;
 @media (min-width: 320px) {
 
  table{
-
-  margin-top: 40px;
   text-align: center;
   width: 350px;
   height: 150px;
-  margin-left: 70px;
+  margin-left: 40px;
 
   }
 
+}
+
+@media (min-width:481px) { 
+ 
+  table {
+    margin-left: 100px;
+    margin-top: 5px;
+    text-align: center;
+    width: 550px;
+    height: 270px;
+  }
 }
 /* Pantalla 768px o superior */
 
 @media (min-width: 768px) {
 
  table {
-  margin-top: 30px;
+  margin-left: 220px;
+  margin-top: 5px;
   text-align: center;
-  width: 600px;
+  width: 550px;
   height: 270px;
 
 
