@@ -37,6 +37,11 @@ h2{
 p{
   align-items: center;
 }
-u{
-  color: rgb(227, 74, 120);
+#ab{
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+}
+#ab:hover {
+  color: white  ;
 }
