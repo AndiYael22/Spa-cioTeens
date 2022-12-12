@@ -2,35 +2,23 @@
     color: white;
   }
 .cuadro{
-    width:50%;
-    height:40%;
-    border-radius: 8px;
-    padding:2%;
-    margin: auto;
+    width: 80%;
+    margin: auto; 
     margin-top: 55px;
     margin-bottom: 55px;
     position: relative;
-    background:rgb(227, 74, 120);
 }
-.boton{
-    color: rgb(227, 74, 120);
-    background-color: white;
-    border-radius: 50px;
-    border: none;
-    padding: 15px;
-    margin-bottom: 12px;
-    margin-top: 12px;
-    margin: auto;
-    position: relative;
-    text-align: center;
-    display: inline-block;
-    font-size: 20px;
-}
-h2{
-    text-align: center;
-}
-#texto{
+#texto0{
     justify-content: baseline;
-    font-size: medium;
+    font-size: xx-large;
 }
-  
+#texto1{
+    justify-content: baseline;
+    font-size: large;
+}
+p{
+    color: black;
+    text-align: justify;
+    padding-left: 25px;
+    padding-right: 25px;
+}
