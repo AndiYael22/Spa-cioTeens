@@ -8,6 +8,7 @@
    
     <link rel="stylesheet" href="assets/css/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/88e9d45919.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/styles_perfil.css">
     </head>
  <!-- inicio del footer de arriba-->
@@ -55,9 +56,9 @@
   </div>
 </nav>
 <!-- fin del footer arriba -->
-<body>
 
-    <div class="container-fluid-xxl d-flex w-100 seccion-perfil-usuario">
+
+    <div class="container-fluid-xxl d-flex w-100 seccion-perfil-usuario mx-0 my-5">
         <div class="row perfil-usuario-header text-center">
             <div class="col-10 perfil-usuario-portada ">
                
@@ -68,60 +69,66 @@
                       Cambiar foto
                     </a>--> </div>
                 </div>
-                <button type="button" class="btnd-sm-flex boton-portada">
-                  <a class="regresar" href="seccion-cambios-datos-perfil.html">Editar</a>
+                <button type="button" class="btn d-sm-flex boton-portada" title="Editar">
+                  <a class="regresar" href="seccion-cambios-datos-perfil.html"><i class="fa-solid fa-user-pen" style="font-size: 2rem;"></i></a>
                 </button>
             </div>
         </div>
         <div class="row perfil-usuario-body">
             <div class="col-10 perfil-usuario-bio">
-                <h3 class="usuario d-block w-100 my-4">Nombre de usuario</h3>
-                <!--<p class="texto">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua.</p> -->
+                <h4 class="usuario d-block w-100">Nombre de usuario</h4>
             </div>
             <div class="row perfil-usuario-datos">
                 <form action="#">
+                  <div class="row">
+                    <label for="NombreCompleto" class="col-md-5 form_label"><i class="fa-solid fa-address-card"></i> Nombre Completo: </label>
+                    <input type="text" class="col form-control" name="NombreCompleto" disabled="disabled" value="Juan Perez">
+                </div><br>
                         <div class="row">
-
-                            <label for="email" class="col-md-4 form_label">Correo electrónico:</label>
+                            <label for="email" class="col-md-5 form_label"><i class="fa-solid fa-envelope"></i> Correo electrónico: </label>
                             <input type="email" class="col form-control" name="email" disabled="disabled" value="usuario@gmail.com">
-                        </div>
-                        <br>
+                        </div> <br>
                         <div class="row">
-                            <label for="adress" class="col-md-4 form_label"><i class="icono fas fa-map-signs"></i>Dirección:</label>
-                            <input type="adress" class="col form-control" name="adress" disabled="disabled" value="NY. 5 24270">
+                            <label for="Domicilio" class="col-md-5 form_label"><i class="fa-solid fa-location-dot"></i> Domicilio: </label>
+                            <input type="text" class="col form-control" name="Domicilio" disabled="disabled" value="Ciudad de México">
                         </div><br>
                         <div class="row">
-                            <label for="tel" class="col-md-4 form_label"><i class="icono fas fa-phone-alt"></i>Teléfono:</label>
+                          <label for="CP" class="col-md-5 form_label"><i class="icono fas fa-map-signs"></i> Código Postal: </label>
+                          <input type="text" class="col form-control" name="CP" disabled="disabled" value="24290">
+                      </div><br>
+                        <div class="row">
+                            <label for="tel" class="col-md-5 form_label"><i class="icono fas fa-phone-alt"></i> Teléfono: </label>
                             <input type="tel" class="col form-control" name="tel" disabled="disabled" value="5555555555">
                         </div><br>
                         <div class="row">
-                          <label for="password" class="col-md-4 form_label"><i class="icono fas fa-phone-alt"></i>Contraseña:</label>
+                          <label for="password" class="col-md-5 form_label"><i class="fa-solid fa-lock"></i> Contraseña: </label>
                           <input type="password" class="col form-control" name="password" disabled="disabled" value="5555555555">
                       </div>
                 </form> 
-            </div>
+            </div> 
+              
+            <span id="espacio"></span>
 
-            <div class="row d-flex perfil-usuario-datos menu-perfil">
-              <ul class="nav nav-tabs">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#">Favoritos</a>
+            <div class="row d-flex perfil-usuario-datos my-5 text-center">
+              <ul class="col-md-12 col.sm-12 nav nav-tabs text-center">
+                <li class="col-md-4 col-sm-12 nav-item">
+                  <a class="nav-link" aria-current="page" href="#espacio"><i class="fa-solid fa-heart"></i> Favoritos</a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Mis Compras</a>
+                <li class="col-md-4 col-sm-12 nav-item">
+                  <a class="nav-link" aria-current="page" href="#espacio"><i class="fa-solid fa-cart-shopping"></i> Compras </a>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Preguntas</a>
+                <li class="col-md-4 col-sm-12 nav-item">
+                  <a class="nav-link"  aria-current="page" href="#espacio"><i class="fa-solid fa-circle-question"></i> Preguntas</a>
                 </li>
-                
               </ul>
 
               <div style="height:300px;">
 
-              </div>
+              </div> 
         </div>
-    </div>
+      </div>
   </div>
+
     <!-- conttenedor o footer de abajo -->
     <div class="container-fluid-abajo" >
   
@@ -130,7 +137,7 @@
     
       <div id="ac" >
           <h1 id="sede" >Nuestra Sede</h1>
-          <h3 id="direccion" >Calzada del Federalismo Norte #3145 local 5.<br>Zapopan, Jal.</h3>
+          <h3 id="direccion" style="font-size: 1rem;">Calzada del Federalismo Norte #3145 local 5.<br>Zapopan, Jal.</h3>
       </div>
     
       <div id="mapa" >
