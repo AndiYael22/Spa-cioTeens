@@ -82,6 +82,7 @@ input::placeholder,textarea::placeholder{
 }
 .contacto-formulario{
   border-radius: 20px;
+  padding: 5rem;
   background-color:var(--colorgradiente2);
   opacity:0.8;
 }
@@ -154,3 +155,11 @@ input::placeholder,textarea::placeholder{
     text-decoration: none;
   }
 
+  @media (max-width: 750px) {
+    .section-title{
+      font-size: 2rem;
+    } 
+    .contacto-formulario{
+      padding: 3em;
+    }
+  }
