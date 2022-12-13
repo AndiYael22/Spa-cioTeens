@@ -187,17 +187,7 @@ h3{font-size: 15px;
   
   }
 
-@media (min-width: 320px) {
 
- table{
-  text-align: center;
-  width: 350px;
-  height: 150px;
-  margin-left: 40px;
-
-  }
-
-}
 
   .h22{font-size: 30px;
     color: rgb(242,43,178) ;
@@ -213,22 +203,29 @@ a:hover{color: rgb(19, 160, 255) ;
 
 }
 
-
+@media (min-width: 320px) {
+.legal{
+  padding-bottom: 20px;
+}
+.contacto{
+  padding-bottom: 20px;
+}
+.conocenos{
+padding-bottom: 20px;
+} }
 
 @media (min-width: 768px) {
 
- .legal{
-   padding-top:50px;
+  .legal{
+    margin-top: 50px;
+
+  }
+  .contacto{
+    margin-top: 50px;
+
   }
   .conocenos{
-  
-    padding-top:50px;
-   
-     }
-     .contacto{
-      padding-top:50px;
-      
-     
-       }
+    margin-top: 50px;
 
+  }
 }
