@@ -1,0 +1,103 @@
+#primero{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.productos{
+    border-radius: 5px;
+    border-color: black;
+    border: solid black;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    margin: 5%;
+}
+.card{
+    margin: 0.5em;
+}
+#servicios{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+
+/* HEADER COMUNAL */
+/* #a{text-decoration: none;
+    color: black;
+    font-weight: 500;
+  
+  
+  }
+  
+  #a:hover {color: rgb(235, 75, 101);}
+  #home {
+    height: 60px;
+  }
+  #acceder {
+    height: 30px;
+  }
+  #registro {
+    height: 30px;
+  }
+  #home1{
+    height: 40px;
+  }
+  #home2{
+    height: 35px;
+  }
+  nav{ background-color: rgb(255, 227, 193);
+    
+  
+    
+    }
+    .list-group ul{
+      list-style-type: none;
+      text-align: center;
+    }
+    .list-group li{display: inline;
+      text-align: center;
+      margin: 0 0 0 10px;
+      
+  
+    }
+  
+   
+    .navbar{
+      position: relative;
+      
+    }
+   
+    .navbar-toggler{background-color: rgb(255, 255, 255) ;
+      border: none;
+      padding: 10px 6px;
+      outline: 0;
+  
+    }
+    .navbar-toggler span{
+        display: block;
+        width: 22px;
+        height: 2px;
+        border: 1px;
+        background: rgb(242,43,178) ;
+     }
+     .navbar-toggler span + span{
+       margin-top: 4px;
+       width: 18px;
+       margin-left: 4px;
+     }
+     .navbar-toggler span + span + span{
+      width: 10px;
+        margin-left: 10px;
+      }
+  
+  #home{
+    margin-left: 50px;
+  
+  }
+ */
+ 
