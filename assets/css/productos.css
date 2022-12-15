@@ -3,26 +3,29 @@
     align-items: center;
     text-align: center;
 }
-#productos{
+.productos{
     border-radius: 5px;
     border-color: black;
     border: solid black;
     background-color: beige;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    margin: 5%;
 }
 .card{
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    text-align: center;
-    display: flex;
+    margin: 0.5em;
 }
 #servicios{
     justify-content: center;
     align-items: center;
     text-align: center;
 }
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+
 /* HEADER COMUNAL */
 /* #a{text-decoration: none;
     color: black;
@@ -97,3 +100,4 @@
   
   }
  */
+ 
