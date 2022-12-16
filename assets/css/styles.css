@@ -96,11 +96,11 @@ nav{ background-color: rgb(255, 227, 193);
   margin-left: -250;
   padding-left: -204px;
 }
-.container-fluid-abajo{
+.abajo{
   background-color: rgb(255, 227, 193);
   bottom: 0%;
  width: 100%;
- height: 370px;
+ height: auto;
 
 }
 .contmapa{ 
@@ -141,6 +141,7 @@ margin-left: 20px;
   width: 500px;
    height: 70px;
    margin: left;
+   margin-top: -50px;
     }
      h1{font-size: 40px;
       font-style: bold;
@@ -164,6 +165,7 @@ h3{font-size: 15px;
 @media (min-width: 768px) {
 
   iframe {
+   
     width: 400px;
     height: 270px;
   }
@@ -185,41 +187,8 @@ h3{font-size: 15px;
   
   }
 
-@media (min-width: 320px) {
-
- table{
-  text-align: center;
-  width: 350px;
-  height: 150px;
-  margin-left: 40px;
-
-  }
-
-}
-
-@media (min-width:481px) { 
- 
-  table {
-    margin-left: 100px;
-    margin-top: 5px;
-    text-align: center;
-    width: 550px;
-    height: 270px;
-  }
-}
-/* Pantalla 768px o superior */
-
-@media (min-width: 768px) {
-
- table {
-  margin-left: 220px;
-  margin-top: 5px;
-  text-align: center;
-  width: 550px;
-  height: 270px;
 
 
-  } }
   .h22{font-size: 30px;
     color: rgb(242,43,178) ;
   }
@@ -234,3 +203,29 @@ a:hover{color: rgb(19, 160, 255) ;
 
 }
 
+@media (min-width: 320px) {
+.legal{
+  padding-bottom: 20px;
+}
+.contacto{
+  padding-bottom: 20px;
+}
+.conocenos{
+padding-bottom: 20px;
+} }
+
+@media (min-width: 768px) {
+
+  .legal{
+    margin-top: 50px;
+
+  }
+  .contacto{
+    margin-top: 50px;
+
+  }
+  .conocenos{
+    margin-top: 50px;
+
+  }
+}
