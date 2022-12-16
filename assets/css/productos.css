@@ -1,4 +1,4 @@
-#primero{
+.primero{
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -23,6 +23,9 @@
 .cards-wrapper {
   display: flex;
   justify-content: center;
+}
+img{
+  max-height: 200px;
 }
 
 
