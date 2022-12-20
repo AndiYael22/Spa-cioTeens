@@ -11,10 +11,12 @@
 
     <title>Regístrate</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-
+    <script src="https://kit.fontawesome.com/88e9d45919.js" crossorigin="anonymous"></script>
+  
     <link rel="stylesheet" href="assets/css/styles.css">
     <link href="assets/css/style_contact.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/registro.css">
+    <link rel="stylesheet" href="assets/css/styles_perfil.css">
 </head>
 <body>
     <!-- Comienza Header / Barra de nav -->
@@ -68,71 +70,112 @@
     <div class="row justify-content-center m-lg-5">
       <div class="col-lg-9 ">
           <div class="contacto-formulario p-5">
-            <form name="sentMessage" id="contactForm">
+            <form name="sentMessage" id="registroform">
             <div class="text-end">
             <img src="assets/img/imagen-ico.ico" alt="flor" srcset="" width="48">
           </div>
             <div class="col-lg">
               <h1 class="section-title position-relative text-center mb-1">Registro</h1>
           </div>
-        <div class="col-md-12">
-          <label class="form-label"></label>
-          <input type="text" class="form-control" placeholder="Nombre(s)" 
-          pattern='^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$' title="El nombre solo debe de contener letras A-Z" required>
-          <div id="liveAlert5"></div>
-        </div>
-      
-        <div class="col-md-12">
-          <label class="form-label"></label>
-          <input type="text" class="form-control" placeholder="Apellido(s)" 
-          pattern='^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$' title="El apellido solo debe de contener letras A-Z" required>
-          <div id="liveAlert6"></div>
-        </div>
 
-        <div class="col-md-12">
-          <label class="form-label"></label>
-          <div class="input-group has-validation">
-            <input type="text" class="form-control" placeholder="Nombre de usuario" required>
+              <!--Nombre de usuario-->
+              <div class="row my-2 formulario__grupo" id="grupo__nameUser">
+                <label for="nameUser" class="col form_label"><strong>Nombre de usuario:</strong></label>
+                <div class="col-md-8 formulario__grupo-input">
+                <input type="text" class="col form-control formb" name="nameUser" id="nameUser" pattern="[a-zA-Z]((\.|_|-)?[a-zA-Z0-9]+){3}"
+                  title="El nombre de usuario debe de contener al menos 3 carácteres y puede contener números (no al inicio) "
+                  placeholder="User123" required>
+                  <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+              </div>
+              <p class="form__input-error text-center" style="color: red;">El nombre de usuario no puede contener espacios y no puede quedar vacío.</p>
           </div>
+
+          <!--Nombre-->
+        <div class="row formulario__grupo mt-3" id="grupo__nombre">
+          <label for="nombre" class="col form_label text-center" style="font-weight: 700;"> Nombre:</label>
+          <div class="col-md-8 formulario__grupo-input">
+            <input type="text" class="form-control" name="nombre" id="nombre" pattern='^[a-zA-ZÀ-ÿ\s]{1,40}$'
+              title="Ingresa tu nombre" placeholder="Name Name" required>
+              <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+          </div>
+          <p class="form__input-error text-center" style="color: red;">El nombre solo puede contener letras y espacios</p>
+        </div> <br>
+      
+
+        <!--Apellidos-->
+        <div class="row formulario__grupo" id="grupo__apellidos">
+          <label for="apellidos" class="col form_label text-center" style="font-weight: 700;"> Apellidos:</label>
+          <div class="col-md-8 formulario__grupo-input">
+            <input type="text" class="form-control" name="apellidos" id="apellidos" pattern='^[a-zA-ZÀ-ÿ\s]{1,40}$'
+              title="Ingresa tus apellidos" placeholder="Last Name" required>
+              <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+          </div>
+          <p class="form__input-error text-center" style="color: red;">El apellido solo puede contener letras y espacios</p>
+        </div> <br>
+
+        <!--email-->
+        <div class="row formulario__grupo" id="grupo__email">
+          <label for="email" class="col form_label text-center" style="font-weight: 700;"> Correo
+            electrónico:</label>
+          <div class="col-md-8 formulario__grupo-input">
+            <input type="email" class="col form-control" name="email" id="email" title="Debe de contener @" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+"
+              placeholder="usuario@gmail.com" required>
+              <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+          </div>
+          <p class="form__input-error text-center" style="color: red;">El correo debe de contener @</p>
+        </div> <br>
+
+        <!--Contrasenia-->
+        <div class="row mb formulario__grupo" id="grupo__password">
+          <label for="password" class="col form_label text-center" style="font-weight: 700;"> Contraseña:</label>
+          <div class="col-md-8 formulario__grupo-input">
+            <input type="password" class="col form-control" name="password" id="password"
+              pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&#.$($)$-$_])([A-Za-z\d$@$!%*?&#.$($)$-$_]|[^ ]){8,16}$" title="*Debe contener entre 8 y 16 caracteres. 
+                            Al menos una mayúscula y un caracter especial, como . * - + / $ @ " placeholder="Rojo1529#" required>
+                            <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                            <i class="ver fa-solid fa-eye-slash" id="ver-1"></i>
+                          </div>
+          <p class="form__input-error text-center" style="color: red;">Debe contener entre 8 y 16 caracteres.
+            Al menos una mayúscula y un caracter especial, como . * - + / $ @</p>
+            
+        </div> <br>
+
+        <!--Contrasenia repeat-->
+        <div class="row mb formulario__grupo" id="grupo__password_repeat">
+          <label for="password_repeat" class="col form_label text-center" style="font-weight: 700;"> Repite tu
+            contraseña:</label>
+          <div class="col-md-8 formulario__grupo-input">
+            <input type="password" class="col form-control" name="password_repeat" id="password_repeat"
+              pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&#.$($)$-$_])([A-Za-z\d$@$!%*?&#.$($)$-$_]|[^ ]){8,16}$" title="*Debe contener entre 8 y 16 caracteres. 
+                            Al menos una mayúscula y un caracter especial, como . * - + / $ @ " placeholder="Rojo1529#">
+                            <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
+                            <i class="ver-2 fa-solid fa-eye-slash" id="ver-2"></i>
+                          </div>
+          <p class="form__input-error text-center" style="color: red;">Las contraseñas deben de ser iguales</p>
         </div>
 
-        <div class="col-md-12">
-            <label for="email" class="form-label"></label>
-            <input type="email" name="email" id="email" class="form-control" placeholder="Correo electrónico" title="El correo electrónico debe de contener @" data-pattern="" required>
-            <div id="liveAlert3"></div>
+        <div class="formulario__mensaje" id="formulario__mensaje">
+          <p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena el formulario correctamente. </p>
         </div>
 
-        <div class="col-md-12">
-            <label class="form-label" for="psw"></label>
-            
-            <input type="password" name="psw" id="password" class="form-control" placeholder="Contraseña" autocomplete="off" 
-            pattern="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" title="*Debe contener entre 8 y 16 caracteres. 
-            Al menos una mayúscula y un caracter especial, como . * - + / $ @ " required>
-            
-        </div>
-        
-        <div id="liveAlert"></div>
-        <div class="col-md-12">
-          <label class="form-label" for="psw-repeat"></label>
-          <input type="password" name="psw-repeat" id="password_repeat" class="form-control" placeholder="Repetir contraseña" autocomplete="off" data-pattern="^(?=\w*\d)(?=\w*[A-Z])(?=\w*[a-z])\S{8,16}$" required>
-        </div>
-        <div id="liveAlert2"></div>
-        <div id="liveAlert4"></div>
-        <br>
         <div class="container-fluid">
           <div class=" espacio">
             <div class="row">
 
-                <div class="col-8">
+                <div class="col-md-12">
                     <div>
-                    Dando click en <strong>Registrarme</strong>, estás aceptando nuestro <span id="subrayado"><a href="/avisoPrivacidad.html">Aviso de Privacidad</a></span> y nuestras <span id="subrayado";"><a href="/politicasCookies.html">Políticas de Cookies</a></span>.
+                      <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+                     He leído y acepto <span id="subrayado"><a href="/avisoPrivacidad.html">Aviso de Privacidad</a></span> y nuestras <span id="subrayado";"><a href="/politicasCookies.html">Políticas de Cookies</a></span>.
                     </div>
                 </div>
             
-                <div class="col-4"> 
-                  <button type="submit" id="sendMessageButton" class="btn btn-primary px-1" >
+              
+                <div class="col-md-12 text-center mt-3"> 
+                  <button type="submit" id="sendRegistroButton" class="btn btn-primary px-1" >
                     REGISTRARME
                   </button>
+                  <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+               
                 </div>   <!-- Falta hacer el botón de REGISTRARME responsivo, que salga de ahí o solamente lo pase para abajo. -->
              
                 <div class="row py-3">
@@ -208,7 +251,7 @@
 </div>
 <!-- Termina Footer-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/registro.js"></script>
+    <script src="assets/js/formulario (registro).js"></script>
 </body>
 
 </html>
