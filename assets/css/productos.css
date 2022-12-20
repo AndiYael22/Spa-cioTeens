@@ -4,16 +4,16 @@
     text-align: center;
 }
 .productos{
-    border-radius: 5px;
-    border-color: black;
-    border: solid black;
-    background-color: beige;
     display: flex;
     justify-content: center;
     margin: 5%;
+    height: fit-content;
+    width: fit-content;
 }
 .card{
     margin: 0.5em;
+    height: 500px;
+    width: 350px;
 }
 #servicios{
     justify-content: center;
@@ -23,9 +23,48 @@
 .cards-wrapper {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  
+}
+.cards-wrap2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
 }
 img{
   max-height: 200px;
+}
+.btn-primary {
+  background-color: pink;
+}
+#indicator{
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#btn_indicator{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+
+}
+.carousel-control-next{
+  height: fit-content;
+}
+.carousel-control-prev{
+  height: fit-content;
+  padding-left:30px;
+  background-color: aqua;
+  color: aqua;
+}
+.container_1{
+  
 }
 
 
@@ -104,3 +143,58 @@ img{
   }
  */
  
+
+ 
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.borrar-curso {
+    background-color: red;
+    border-radius: 50%;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+ul {
+    list-style: none;
+}
+.submenu {
+    position: relative;
+    
+    
+}
+
+.submenu #carrito{
+    display: none;
+}
+.submenu:hover #carrito{
+    display: block;
+    position: absolute;
+    right:0;
+
+    top:100%;
+    z-index: 1;
+    background-color: white;
+    padding: 20px;
+    min-height: 400px;
+    min-width: 300px;
+}
+.vacio {
+    padding: 10px;
+    background-color: crimson;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+.agregar-carrito {
+    margin:10px 0;
+}
+
+.carr{
+width: 80px;
+margin-left: auto;
+}
