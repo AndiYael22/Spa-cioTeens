@@ -4,16 +4,16 @@
     text-align: center;
 }
 .productos{
-    border-radius: 5px;
-    border-color: black;
-    border: solid black;
-    background-color: beige;
     display: flex;
     justify-content: center;
     margin: 5%;
+    height: fit-content;
+    width: fit-content;
 }
 .card{
     margin: 0.5em;
+    height: 500px;
+    width: 350px;
 }
 #servicios{
     justify-content: center;
@@ -23,12 +23,45 @@
 .cards-wrapper {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
+  
+}
+.cards-wrap2 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
 }
 img{
   max-height: 200px;
 }
-#btn-primary {
+.btn-primary {
   background-color: pink;
+}
+#indicator{
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#btn_indicator{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+
+}
+.carousel-control-next{
+  height: fit-content;
+}
+.carousel-control-prev{
+  height: fit-content;
+  padding-left:30px;
+  background-color: aqua;
+  color: aqua;
 }
 
 

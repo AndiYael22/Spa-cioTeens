@@ -89,12 +89,14 @@
       <div id="hola"  >
       <!-- Carrusel de tarjetas inicio -->
       <h1 class="primero">Productos</h1>
+
+      <div class="productos">
       <!-- <div class="productos"> -->
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button id="indicator" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button id="indicator" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            
           </div>
         <div class=" carousel-inner">
           <div class=" carousel-item active">
@@ -106,30 +108,26 @@
 
                 
                 <div class="card" style="width: 18rem;">
-
-                  <img src="./assets/img/WhatsApp Image 2022-12-13 at 17.51.07.jpeg" class="card-img-top" alt="1">
+                  <img src="./assets/img/WhatsApp Image 2022-12-13 at 17.51.07.jpeg" class="card-img-top" alt="Producto 1">
                   <div class="card-body">
                     <h5 class="card-title">Bálsamo exfoliante</h5>
-                    <p class="card-text"> Utiliza cristales de miel para remover suavemente la piel seca, y manteca de cacao para dejar tus pies suaves  </p>
-                    <span>$65</span> <br>
-                    <a href="#"  data-id="1" class="btn btn-primary">Ir al carrito</a>
+                    <p>$65</p>
+                    <p class="card-text"> Utiliza cristales de miel para remover suavemente la piel seca, y manteca de cacao para dejar tus pies suaves</p>
+                    <button class="btn btn-primary" onclick="addToCart('Producto 1', 100)">Añadir al carrito</button>
+
                   </div>
                 </div>
                 
                 
 
                 <div class="card" style="width: 18rem;">
-                  <img src="./assets/img/WhatsApp Image 2022-12-13 at 17.51.07.jpeg" class="card-img-top" alt="2">
+                  <img src="./assets/img/WhatsApp Image 2022-12-13 at 17.51.07.jpeg" class="card-img-top" alt="Producto 2">
                   <div class="card-body">
                     <h5 class="card-title">Gel refrescante para pies</h5>
-
-                    <p class="card-text"> Brinda a los pies cansados el descanso inmediato después de un gran día de actividad </p>
-                    <span>$50</span> <br>
-                    <a href="#"  data-id="2"  class="btn btn-primary">Ir al carrito</a>
-
-                    <p class="card-text"> Brinda a los pies cansados el descanso inmediato después de un gran día de actividad $50 </p>
-                    <a href="#" class="btn btn-primary ">Ir al carrito</a>
-
+                    <p>$50</p>
+                    <p class="card-text"> Brinda a los pies cansados el descanso inmediato después de un gran día de actividad</p>
+                    <button class="btn btn-primary" onclick="addToCart('Producto 2', 100)">Añadir al carrito</button>
+                    
                   </div>
                 </div>
                 
@@ -137,12 +135,14 @@
                
 
                 <div class="card" style="width: 18rem;">
-                  <img src="./assets/img/WhatsApp Image 2022-12-13 at 17.51.07.jpeg" class="card-img-top" alt="3">
+                  <img src="./assets/img/WhatsApp Image 2022-12-13 at 17.51.07.jpeg" class="card-img-top" alt="Producto 3">
                   <div class="card-body">
                     <h5 class="card-title">Crema aloe vera facial</h5>
-                    <p class="card-text"> Su poder astringente hace que esta planta sea ideal para hacer una limpieza intensa de la piel del rostro </p>
-                    <span>$60</span> <br>
-                    <a href="#"  data-id="3" class="btn btn-primary">Ir al carrito</a>
+
+                    <p>$60</p>
+                    <p class="card-text"> Su poder astringente hace que esta planta sea ideal para hacer una limpieza intensa de la piel del rostro</p>
+                    <button class="btn btn-primary" onclick="addToCart('Producto 3', 100)">Añadir al carrito</button>
+
                   </div>
                 </div>
                 
@@ -150,12 +150,13 @@
                
 
                 <div class="card" style="width: 18rem;">
-                  <img src="./assets/img/WhatsApp Image 2022-12-13 at 17.51.07.jpeg" class="card-img-top" alt="4">
+                  <img src="./assets/img/WhatsApp Image 2022-12-13 at 17.51.07.jpeg" class="card-img-top" alt="Producto 4">
                   <div class="card-body">
                     <h5 class="card-title">Bloqueador solar</h5>
-                    <p class="card-text">Permite bloquear la radiación ultravioleta (UV) del sol, ayudando a proteger a las personas de las quemaduras solares </p>
-                    <span>$90</span> <br>
-                    <a href="#" class="btn btn-primary" data-id="2">Agregar Al Carrito</a>
+                    
+                    <p>$90</p>
+                    <p class="card-text"> permiten absorber o bloquear la radiación ultravioleta (UV) del sol, ayudando a proteger a las personas de las quemaduras solares</p>
+                    <button class="btn btn-primary" onclick="addToCart('Producto 4', 100)">Añadir al carrito</button>
                   </div>
                 </div>
               
@@ -166,12 +167,14 @@
             <div class="cards-wrapper">
                 <!-- Segunda slide -->
                 <div class="card" style="width: 18rem;">
-                  <img src="./assets/img/WhatsApp Image 2022-12-13 at 17.51.07.jpeg" class="card-img-top" alt="...">
+                  <img src="./assets/img/WhatsApp Image 2022-12-13 at 17.51.07.jpeg" class="card-img-top" alt="Producto 5">
                   <div class="card-body">
                     <h5 class="card-title">Tónico facial</h5>
-                    <p class="card-text">Acaba con los residuos de suciedad que han quedado en el cutis, cerrar los poros y refrescar la piel  </p>
-                    <span>$55</span> <br>
-                    <a href="#"  data-id="5" class="btn btn-primary">Ir al carrito</a>
+
+                    <p>$55</p>
+                    <p class="card-text"> acabar con los residuos de suciedad que han quedado en el cutis, cerrar los poros y refrescar la piel</p>
+                    <button class="btn btn-primary" onclick="addToCart('Producto 5', 100)">Añadir al carrito</button>
+
                   </div>
                 </div>
 
@@ -179,12 +182,14 @@
 
 
                 <div class="card" style="width: 18rem;">
-                  <img src="./assets/img/WhatsApp Image 2022-12-13 at 18.23.57.jpeg" class="card-img-top" alt="...">
+                  <img src="./assets/img/WhatsApp Image 2022-12-13 at 18.23.57.jpeg" class="card-img-top" alt="Producto 6">
                   <div class="card-body">
-                    <h5 class="card-title">Paquete Cuidado personal</h5>
-                    <p class="card-text"> Todo para que tengas una rutina completa de skincare </p>
-                    <span>$300</span> <br>
-                    <a href="#" data-id="6" class="btn btn-primary">Ir al carrito</a>
+
+                    <h5 class="card-title">Paquete cuidado personal</h5>
+                    <p>$300</p>
+                    <p class="card-text"> Todo para que tengas una rutina completa de skincare</p>
+                    <button class="btn btn-primary" onclick="addToCart('Producto 6', 100)">Añadir al carrito</button>
+
                   </div>
                 </div>
                 
@@ -193,12 +198,13 @@
 
 
                 <div class="card" style="width: 18rem;">
-                  <img src="./assets/img/WhatsApp Image 2022-12-13 at 18.24.43.jpeg" class="card-img-top" alt="...">
+                  <img src="./assets/img/WhatsApp Image 2022-12-13 at 18.24.43.jpeg" class="card-img-top" alt="Producto 7">
                   <div class="card-body">
                     <h5 class="card-title">Paquete Cuidado de pies</h5>
-                    <p class="card-text">Todo para un pedicure desde casa y mantener tus pies lindos y suaves  </p>
-                    <span>$150</span> <br>
-                    <a href="#" data-id="7" class="btn btn-primary">Ir al carrito</a>
+
+                    <p>$150</p>
+                    <p class="card-text">Todo para un pedicure desde casa y mantener tus pies lindos y suaves</p>
+                    <button class="btn btn-primary" onclick="addToCart('Producto 7', 100)">Añadir al carrito</button>
                   </div>
                 </div>
               
@@ -206,12 +212,14 @@
 
                 
                 <div class="card" style="width: 18rem;">
-                  <img src="./assets/img/WhatsApp Image 2022-12-13 at 18.25.18.jpeg" class="card-img-top" alt="...">
+                  <img src="./assets/img/WhatsApp Image 2022-12-13 at 18.25.18.jpeg" class="card-img-top" alt="Producto 8">
                   <div class="card-body">
                     <h5 class="card-title">Paquete Manos suaves</h5>
-                    <p class="card-text">Un kit perfecto para el cuidado de las manos de tu princesa. Utilizamos los mejores ingredientes para piel sensible  </p>
-                    <span>$120</span> <br>
-                    <a href="#" data-id="8" class="btn btn-primary">Ir al carrito</a>
+
+                    <p>$120</p>
+                    <p class="card-text">Un kit perfecto para el cuidado de las manos de tu princesa, utilizamos los mejores ingredientes para piel sensible</p>
+                    <button class="btn btn-primary" onclick="addToCart('Producto 8', 100)">Añadir al carrito</button>
+
                   </div>
                 </div>
               
@@ -219,9 +227,126 @@
             </div>
           </div>
         </div>
+        <div id="btn_indicator" >
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Anterior</span>
+          </button>
+          <button id="indicator" class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      </div>
+
+      <!-- <h1 id="servicios">Servicios</h1>
+      <div class="servicios">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+
+              <div class="cards-wrap2">
+                <div class="card" style="width: 18rem;">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+
+
+
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="cards-wrap2">
+                <div class="card" style="width: 18rem;">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+
+
+
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="cards-wrap2">
+                <div class="card" style="width: 18rem;">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="..." class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                  </div>
+                </div>
+
+
+
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
           </button>
           <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -229,9 +354,8 @@
           </button>
         </div>
 
+      </div> 
 
-        
-      </div>
       <!-- </div> -->
       <!-- carrusel 1 final -->
           
