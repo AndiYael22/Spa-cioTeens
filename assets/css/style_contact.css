@@ -50,6 +50,12 @@
 body{
    background-color: var(--light);
   }
+
+.footer a{
+    outline: none;
+    text-decoration: none;
+    color: rgb(242,43,178) ;
+  }
 /* h1{
  
 } */
@@ -61,11 +67,11 @@ input{
 input::placeholder,textarea::placeholder{
   font-size: 1.2em;
 }
+
 .form-control{
   border-radius: 20px;
   background-color: var(--pinkLight3);
   color: var(--gray);
-  
 }
 .section-title{
   color: var(--light);
@@ -182,9 +188,11 @@ input::placeholder,textarea::placeholder{
     }
     .form-control[required]:valid{
         border:thin solid var(--form-ok-color);
+        box-shadow: 0 0 0 0.2rem var(--form-ok-color);
     }
     .form-control[required]:invalid{
         border:thin solid var(--form-error-color);
+        
     }
     .form-control-error{
         margin-top: -1rem;

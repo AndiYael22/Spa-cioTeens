@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Comforter+Brush&family=Lato&family=Roboto+Mono:ital,wght@1,200&family=Shalimar&family=Source+Sans+Pro:wght@200&display=swap');
 
 :root{
-    --colorgradiente2: #FF7676;
+    --colorgradiente3: #FF7676;
     --pink2: #F292A4;
     --pinkdark:#c95a70;
-    --gradiente1: linear-gradient(var(--colorgradiente2),var(--pink2), transparent);
+    --gradiente1: linear-gradient(var(--colorgradiente3),var(--pink2), transparent);
     --pinkLight:#ffd8f3;
     --pinkgray:rgba(167, 2, 79, 0.473);
+    --form-ok-color: rgb(51, 235, 51);
+    --form-error-color: rgb(243, 36, 36);
     --font-family-sans-serif: "Poppins", sans-serif;
 }
 * {
@@ -17,7 +19,10 @@
     box-sizing: border-box;
 }
 label{
+    display: block;
     padding: 10px;
+    cursor: pointer;
+    font-weight: 700;
 }
 html {
     -webkit-text-size-adjust: 100%;
@@ -26,18 +31,135 @@ html {
    
 }
 .form-control{
-    background-color: var(--Light);
+    background-color: var(--light);
+    width: 100%;
+    border-radius: 20px;
+    border: 3px solid var(--pinkLight);
+    line-height: 45px;
+    transition: .3s ease all;
     
 }
-.fa-solid, .fas{
+.form-control:focus{
+    border: transparent;
+    outline: none;
+    box-shadow: 3px 0 10px rgb(235, 171, 205);
+
+}
+/* Validacion de formulario inicia*/
+.form__input-error{
+    font-size: .9rem;
+    display: none;
+}
+.form__input-error-activo{
+    display: block;
+}
+.formulario__grupo-input{
+    position: relative;
+}
+.formulario__validacion-estado{
+    position: absolute;
+    right: 25px;
+    bottom: 22px;
+    z-index: 100;
+    font-size: 20px;
+    opacity: 0;
+
+}
+.formulario__mensaje{
+    display: none;
+}
+.formulario__grupo-correcto .formulario__validacion-estado{
+    color: var(--form-ok-color);
+    opacity: 1;
+}
+
+.ver{
+    position: absolute;
+    right: -10px;
+    bottom: 25px;
+    color: #000;
+    cursor: pointer;
+}
+.ver-2{
+    position: absolute;
+    right: -10px;
+    bottom: 25px;
+    color: #000;
+    cursor: pointer;
+}
+/*.formulario__grupo-correcto{
+    color: var(--form-ok-color);
+    opacity: 1;
+}*/
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+    color: var(--form-error-color);
+    opacity: 1;
+    z-index: 100;
+}
+.formulario__grupo-incorrecto {
+    color: var(--form-error-color);
+    opacity: 1;
+    z-index: 100;
+}
+
+.formulario__checkbox {
+    cursor: pointer;
+    background-color: var(--pinkLight);
+    width: 23px;
+    height: 23px;
+    appearance: none;
+    border-radius: 10px;
+    border: 1px solid  var(--pinkdark);
+}
+.formulario__checkbox:checked {
+    background-image: url("/assets/img/flor_check.ico");
+  }
+
+.formulario__mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.formulario__mensaje p {
+	margin: 0;
+}
+
+.formulario__grupo-btn-enviar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.formulario__mensaje-exito {
+	font-size: 14px;
+	color: #119200;
+	display: none;
+}
+
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+
+/* Validacion de formulario end*/
+
+
+.contexto-perfil{
     color: var(--pink2);
     text-shadow: -1px -1px 1px #000, 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000;
 
 }
-input:disabled{
- 
+input::disabled{
     background-color: #c95a70;
     box-shadow: #c95a70;
+    appearance: none;
 }
 
 
@@ -103,7 +225,7 @@ body {
     height: 10rem;
     align-items: center;
     justify-content: center;
-    border: 0.5rem double var(--colorgradiente2);
+    border: 0.5rem double var(--colorgradiente3);
     background-color: #DFE5F2;
     border-radius: 50%;
     box-shadow: 0 0 12px rgba(0, 0, 0, .2);
@@ -165,7 +287,7 @@ fin cambiar foto */
 .seccion-perfil-usuario .perfil-usuario-bio {
     display: flex;
     flex-wrap: wrap;
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 1rem;
     box-shadow: 0 0 12px var(--pink2);
     background-color: #fff;
     border-radius: 15px;
@@ -235,15 +357,18 @@ fin cambiar foto */
     border-radius: 8px;
 
 }
-/*
 a{
+    outline: none;
     text-decoration: none;
-    color: #fff;
-}
-a:active{
-    color: #fff;
-}
-*/
+    color: rgb(242,43,178) ;
+  }
+  
+  a:hover{color: rgb(19, 160, 255) ;
+  
+  }
+
+
+
 .menu-perfil a:hover {
     background-color: var(--pink2);
     color: #fff;
@@ -303,15 +428,15 @@ a:active{
     color: #F195B2;
     text-decoration: none;
   }
-  .nav-link{
+  .opciones_nav{
     color: var(--pinkdark);
   }
-  .nav-link:hover{
+  .opciones_nav:hover{
     color: var(--pinkLight);
     background-color: var(--pinkdark);
   }
 
-  .nav-link:focus{
+  .opciones_nav:focus{
     background-color: var(--pink2);
   } 
   .nav-tabs{
@@ -388,6 +513,7 @@ a:active{
     }
     .form-control[required]:invalid{
         border:thin solid var(--form-error-color);
+        color: red;
     }
     .form-control-error{
         margin-top: -1rem;
