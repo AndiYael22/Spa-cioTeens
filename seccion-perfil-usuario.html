@@ -78,17 +78,19 @@
         </div>
         <div class="row perfil-usuario-body">
             <div class="col-10 perfil-usuario-bio">
-                <h4 class="usuario d-block w-100">Nombre de usuario</h4>
+                <h4 class="usuario d-block w-100" id="nameUser">
+
+                </h4>
             </div>
             <div class="row perfil-usuario-datos">
-                <form action="#">
+                <form od="formGetUsuario">
                   <div class="row">
                     <label for="NombreCompleto" class="col-md-5 form_label"><i class="contexto-perfil fa-solid fa-address-card"></i> Nombre Completo: </label>
-                    <input type="text" class="col form-control" name="NombreCompleto" disabled="disabled" value="Juan Perez">
+                    <input type="text" class="col form-control" name="NombreCompleto" disabled="disabled" value="" id="NombreCompleto">
                 </div><br>
                         <div class="row">
                             <label for="email" class="col-md-5 form_label"><i class="contexto-perfil fa-solid fa-envelope"></i> Correo electrónico: </label>
-                            <input type="email" class="col form-control" name="email" disabled="disabled" value="usuario@gmail.com">
+                            <input type="email" class="col form-control" name="email" disabled="disabled" value="usuario@gmail.com" id="">
                         </div> <br>
                         <div class="row">
                             <label for="Domicilio" class="col-md-5 form_label"><i class="contexto-perfil fa-solid fa-location-dot"></i> Domicilio: </label>
@@ -182,7 +184,9 @@
      <a href="#" > Spa-cio teens © Todos los derechos reservados.</a>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
-<!-- termina contenedor footer de abajo -->
+
+    <script src="/assets/js/formularioGetusuario.js"></script>
+    <!-- termina contenedor footer de abajo -->
 
 </body>
 
