@@ -1,3 +1,15 @@
+const d=document;
+const formularioGET=d.getElementById('registroform');
+var id=1;
+const urlPost=`http://localhost:8080/usuarios/${id}`;
+const nameUsuario=d.getElementById('nameUser');
+const nombre=d.getElementById('nombre');
+const apellidos=d.getElementById('apellidos');
+const email=d.getElementById('email');
+const password=d.getElementById('password');
+
+//----Post
+
 /*Mostrar contrasenia 1*/
 const pass1 = document.getElementById('password');
 	

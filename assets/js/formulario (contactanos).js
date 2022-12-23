@@ -1,3 +1,18 @@
+const formularioGET=d.getElementById('formGetUsuario');
+var id=1;
+const urlGet=`http://localhost:8080/contactanos/${id}`;
+const nombre=d.getElementById('nombre');
+var nombreV=nombre.value;
+const email=d.getElementById('email');
+var emailV=email.value;
+const asunto=d.getElementById('asunto');
+var asuntoV=asunto.value;
+const mensaje=d.getElementById('message');
+var mensajeV=mensaje.value;
+
+//-------
+
+
 const formulario = document.getElementById('contactForm');
 const inputs = document.querySelectorAll('input');
 

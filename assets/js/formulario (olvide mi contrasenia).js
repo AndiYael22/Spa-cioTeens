@@ -1,3 +1,12 @@
+const d=document;
+const formularioGET=d.getElementById('inicSesion');
+var id=1;
+const urlPost=`http://localhost:8080/usuarios/${id}`;
+const nameUsuario=d.getElementById('nameUser');
+const password=d.getElementById('password');
+
+//---GET
+
 const formulario = document.getElementById('olvCont');
 const inputs = document.querySelectorAll('input');
 

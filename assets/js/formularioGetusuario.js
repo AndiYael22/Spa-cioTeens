@@ -5,11 +5,10 @@ const urlGet=`http://localhost:8080/usuarios/${id}`;
 const nameUsuario=d.getElementById('nameUser');
 const nombreCompleto=d.getElementById('NombreCompleto');
 const email=d.getElementById('email');
-const contrasenia=d.getElementById('password');
 const domicilio=d.getElementById('Domicilio');
 const cp=d.getElementById('cp');
 const tel=d.getElementById('tel');
-const password=d.getElementById('password')
+const password=d.getElementById('password');
 
 
     fetch(urlGet,{
@@ -22,13 +21,20 @@ const password=d.getElementById('password')
         },
         method:'GET',
 
-    }).then((response)=> response.json()).then((data)=>{
+    }).then((response)=> response.json())
+    .then((data)=>{
         nameUsuario.textContent=String(data.nombreUsuario);
         console.log(data.nombreUsuario);
         nombreCompleto.value=String(data.nombre);
+        email.value=String(data.email);
+        contrasenia.value=String(data.contrasenia);
+        domicilio.value=String(data.domicilio);
+        cp.value=String(data.cp);
+        tel.value=String(data.tel);
+        password.value=String(data.password)
     })
     .catch(()=>{
-        //console.error("Error: ",error);
+        console.error("Error: ",error);
     });
 
 
