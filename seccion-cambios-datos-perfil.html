@@ -112,7 +112,7 @@
           <label for="nombre" class="col-md-5 form_label"> Nombre:</label>
           <div class="col formulario__grupo-input">
             <input type="text" class="form-control" name="nombre" id="nombre" pattern='^[a-zA-ZÀ-ÿ\s]{1,40}$'
-              title="Ingresa tu nombre" placeholder="Name Name" required>
+              title="Ingresa tu nombre" placeholder="Name Name" value="Juan" required>
               <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
           </div>
           <p class="form__input-error text-center">El nombre solo puede contener letras y espacios</p>
@@ -124,7 +124,7 @@
           <label for="apellidos" class="col-md-5 form_label"> Apellidos:</label>
           <div class="col formulario__grupo-input">
             <input type="text" class="form-control" name="apellidos" id="apellidos" pattern='^[a-zA-ZÀ-ÿ\s]{1,40}$'
-              title="Ingresa tus apellidos" placeholder="Last Name" required>
+              title="Ingresa tus apellidos" placeholder="Last Name" value="Perez" required>
               <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
           </div>
           <p class="form__input-error text-center">El apellido solo puede contener letras y espacios</p>
@@ -136,7 +136,7 @@
             electrónico:</label>
           <div class="col formulario__grupo-input">
             <input type="email" class="col form-control" name="email" id="email" title="Debe de contener @" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+"
-              placeholder="usuario@gmail.com" required>
+              placeholder="usuario@gmail.com" value="juanperez@gmail.com" required>
               <i class="formulario__validacion-estado fa-solid fa-circle-xmark"></i>
           </div>
           <p class="form__input-error text-center">El correo debe de contener @</p>
